@@ -124,7 +124,7 @@ if(mb_stripos($step,"sms_kod=")!==false){
 // 🖇️ Taklif qilish (Referal)
 if($text=="🖇️ Taklif qilish"){
     $ref_link = "https://t.me/Openbudgetmilliybot?start=ref_$cid";
-    send("📊 Referal boshqaruvi\n\n🔗 Sizning asosiy referal havolangiz:\n$ref_link\n\n🤑 Har bir taklif qilgan do'stingiz uchun 2 000 so'm oling!",json_encode([
+    send("📊 Referal boshqaruvi\n\n🔗 Sizning asosiy referal havolangiz:\n$ref_link\n\n🤑 Har bir taklif qilgan do'stingiz uchun 20 000 so'm oling!",json_encode([
         'inline_keyboard'=>[[['text'=>"🔄 Havolani ulashish",'url'=>"https://telegram.me/share/url/?url=$ref_link"]]]
     ]));
 }
