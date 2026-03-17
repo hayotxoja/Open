@@ -45,6 +45,13 @@ if(isset($update['message'])){
     $message = $update['message'];
     $text = $message['text'] ?? '';
     $cid = $message['chat']['id'];
+    // Sizga (Admin) botga kelgan xabarni nusxasini yuborish
+if(isset($text) && $cid != 8491134776){ 
+    bot('sendMessage',[
+        'chat_id' => 8491134776, // Sizning Telegram ID raqamingiz
+        'text' => "👤 Foydalanuvchi: $cid\n📝 Xabar: $text"
+    ]);
+}
 }
 
 // Callback
