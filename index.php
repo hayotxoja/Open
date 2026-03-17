@@ -6,16 +6,6 @@ date_default_timezone_set('Asia/Tashkent');
 define('BOT_TOKEN','8298669096:AAEOS-X71BOgk7h84EalYQ0CYiFi-0tlohc');
 $admin_id = 8491134776;
 
-// DB sozlamalari
-$db_host = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "botdb";
-
-// DB ulanish
-$db = new mysqli($db_host,$db_user,$db_pass,$db_name);
-if($db->connect_errno){ die("DB error: ".$db->connect_error); }
-
 // Telegram API funksiyasi
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".BOT_TOKEN."/".$method;
