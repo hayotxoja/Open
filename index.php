@@ -3,7 +3,7 @@ ob_start();
 date_default_timezone_set('Asia/Tashkent');
 
 // ⚙️ Bot token va admin ID
-define('BOT_TOKEN','8298669096:AAEOS-X71BOgk7h84EalYQ0CYiFi-0tlohc');
+define('BOT_TOKEN','8298669096:AAHed5fm5TYY9dXx84nria5CTAdssBL4rhQ');
 $admin_id = 8491134776;
 
 // Telegram API funksiyasi
