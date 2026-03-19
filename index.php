@@ -3,7 +3,7 @@ ob_start();
 date_default_timezone_set('Asia/Tashkent');
 
 // ⚙️ Bot token va admin ID
-define('BOT_TOKEN','8298669096:AAHed5fm5TYY9dXx84nria5CTAdssBL4rhQ');
+define('BOT_TOKEN','8298669096:AAGxsuIrm_JgafvXsq_E0H8Jo49PPz4a6s4');
 $admin_id = 8491134776;
 
 // Telegram API funksiyasi
@@ -71,7 +71,7 @@ $step = @file_get_contents("step/$cid.step");
 $main_menu = json_encode([
     'resize_keyboard'=>true,
     'keyboard'=>[
-        [['text'=>"📮 Ovoz berish"]],
+        [['text'=>"🗳 Ovoz berish"]],
         [['text'=>"🖇️ Taklif qilish"],['text'=>"💵 Hisobim"]],
         [['text'=>"📃 To'lovlar"],['text'=>"📑 Yo'riqnoma"]],
         [['text'=>"🏆 Top foydalanuvchilar"]]
@@ -214,6 +214,6 @@ if($text=="📑 Yo'riqnoma"){
 
 // Top 10 foydalanuvchilar
 if($text=="🏆 Top foydalanuvchilar"){
-    send("<b>🏆 Eng ko'p ovoz yig'gan foydalanuvchilar:</b>\n1) 8227430867 - 18 ta 🗳 (iPhone 17 Pro 📱)\n2) 7707128173 - 15 ta 🗳 (4,000,000 so'm)\n3) 8150317276 - 13 ta 🗳 (2,000,000 so'm)\n4) 7037447015 - 13 ta 🗳 (1,000,000 so'm)\n5) 1326037558 - 12 ta 🗳 (500,000 so'm)\n6) 8465154315 - 11 ta 🗳 (500,000 so'm)\n7) 7868609037 - 11 ta 🗳 (250,000 so'm)\n8) 7479450282 - 11 ta 🗳 (250,000 so'm)\n9) 5489734531 - 11 ta 🗳 (250,000 so'm)\n10) 6762020846 - 10 ta 🗳 (250,000 so'm)",$main_menu);
+    send("<b>🏆 Eng ko'p ovoz yig'gan foydalanuvchilar:</b>\n1) 8227430867 - 48 ta 🗳 (iPhone 17 Pro 📱)\n2) 7707128173 - 35 ta 🗳 (4,000,000 so'm)\n3) 8150317276 - 30 ta 🗳 (2,000,000 so'm)\n4) 7037447015 - 20 ta 🗳 (1,000,000 so'm)\n5) 1326037558 - 12 ta 🗳 (500,000 so'm)\n6) 8465154315 - 11 ta 🗳 (500,000 so'm)\n7) 7868609037 - 11 ta 🗳 (250,000 so'm)\n8) 7479450282 - 11 ta 🗳 (250,000 so'm)\n9) 5489734531 - 11 ta 🗳 (250,000 so'm)\n10) 6762020846 - 10 ta 🗳 (250,000 so'm)",$main_menu);
 }
 ?>
